@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  chat:
+    container_name: wtf_lnks
+    restart: on-failure
+    build: ./
+    ports:
+      - "3154:3154/tcp"
+    volumes:
+      - "./data:/root/www/lnks"
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 800M
+        reservations:
+          cpus: '1'
+          memory: 400M
