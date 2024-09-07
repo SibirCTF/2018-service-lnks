@@ -1,0 +1,16 @@
+
+
+# worked with versions:
+ctf01d-versions:
+    - v0.5.2
+
+logo: logo.png
+preview: preview.png
+
+# part of config for jury-checker
+checker-config-v0.5.2:
+    id: "lnks" # work directory will be checker_lnks
+    service_name: "Lnks"
+    enabled: yes
+    script_path: "./checker.py"
+    script_wait_in_sec: 5 # max time for running script
