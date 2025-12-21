@@ -1,0 +1,32 @@
+{
+  "service_name": "2018-service-lnks",
+  "display_name": "Lnks",
+  "ctf_event": "Sibir CTF 2018",
+  "year": 2018,
+  "description": "Сервис коротких ссылок.",
+  "author": "Евгений Сопов",
+  "service_port": 3154,
+  "languages": [
+    "PHP"
+  ],
+  "tech_stack": [
+    "PHP"
+  ],
+  "dependencies": {
+    "runtime": [],
+    "development": [],
+    "system": []
+  },
+  "vulnerabilities": [
+    {
+      "type": "Backdoor",
+      "description": "Бекдор в index.php позволяет выполнять команды через url=bash://.",
+      "severity": "Critical"
+    }
+  ],
+  "metadata": {
+    "difficulty": null,
+    "category": null,
+    "tags": []
+  }
+}
